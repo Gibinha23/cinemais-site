@@ -73,3 +73,12 @@ footer small{opacity:.8}
 @media(max-width:700px){.gallery.four{grid-template-columns:1fr}}
 .dl-title{font-size:1.2rem;margin:28px 0 14px}
 .gallery.four{margin-bottom:12px}
+
+/* topo: texto + uma única tela */
+.hero-wrap{background:#0A0B10 url(assets/img/fundo.jpg) center/cover no-repeat}
+.hero-wrap .hero{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center;min-height:min(70vh,640px);padding:70px 5vw}
+.hero-text{max-width:none}
+.hero-shot img{width:100%;display:block;border-radius:22px;border:1px solid #2a3046;box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 90px rgba(251,185,26,.12)}
+@media(max-width:800px){
+ .hero-wrap .hero{grid-template-columns:1fr;gap:28px;padding:40px 5vw 48px;min-height:0}
+}
