@@ -66,3 +66,8 @@ footer small{opacity:.8}
  .hero-text{max-width:none}
  .activation{grid-template-columns:1fr}
 }
+
+.gallery.four{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.gallery.four figure{margin:0;position:relative}
+.gallery.four figcaption{position:absolute;left:12px;bottom:12px;background:rgba(10,11,16,.85);color:#fff;font-size:.85rem;font-weight:700;padding:5px 12px;border-radius:999px;border:1px solid var(--line)}
+@media(max-width:700px){.gallery.four{grid-template-columns:1fr}}
