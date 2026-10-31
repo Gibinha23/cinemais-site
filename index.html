@@ -5,11 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cine+ — Baixe o app e assista onde quiser</title>
 <meta name="description" content="Conheça o Cine+: veja como é o app em cada aparelho, aprenda a usar e conheça o painel de ativação.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#0A0B10">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <a class="logo" href="#inicio"><i>C+</i><b>Cine<span>+</span></b></a>
+  <a class="logo" href="#inicio"><img src="assets/img/logo.png" alt="" width="36" height="36"><b>Cine<span>+</span></b></a>
   <nav>
     <a href="#aparelhos">Aparelhos</a>
     <a href="#como-usar">Como usar</a>
@@ -20,17 +23,19 @@
 </header>
 
 <main>
+<div class="hero-wrap">
 <section id="inicio" class="hero">
   <div class="hero-text">
+    <span class="pill">Teste grátis · 7 dias</span>
     <h1>Seu cinema em <em>qualquer tela</em></h1>
-    <p>Um player rápido e simples para a sua TV. Veja como o app funciona, como usar e como gerenciar a ativação dos aparelhos.</p>
+    <p>Um player rápido e simples para a sua TV. Veja como o app funciona, como usar e como ativar o seu aparelho.</p>
     <div class="cta">
       <a class="btn" href="#aparelhos">Ver aparelhos</a>
       <a class="btn ghost" href="#como-usar">Como usar</a>
     </div>
   </div>
-  <div class="hero-img"><div class="shot auto"><img src="assets/img/tv-filmes.jpg" alt="Lista de filmes do Cine+ na TV"></div></div>
 </section>
+</div>
 
 <section id="aparelhos">
   <h2>Disponível nos seus aparelhos</h2>
@@ -71,11 +76,19 @@
   <h2>Como usar</h2>
   <ol class="steps">
     <li><b>Baixe o app</b><span>Escolha o seu aparelho acima e instale o Cine+.</span></li>
-    <li><b>Faça login</b><span>Ative o aparelho com o código exibido na tela.</span></li>
+    <li><b>Ative o aparelho</b><span>Abra o app e anote o ID do aparelho que aparece na tela.</span></li>
     <li><b>Adicione a sua lista</b><span>O Cine+ é um player: você usa a lista de conteúdo que você tem direito de acessar.</span></li>
     <li><b>Aproveite</b><span>Navegue por categorias, marque favoritos e assista em tela cheia.</span></li>
   </ol>
-  <div class="video ph" data-label="Vídeo tutorial (opcional)"></div>
+  <div class="activation">
+    <div class="shot auto"><img src="assets/img/ativacao.jpg" alt="Tela de ativação do Cine+ com o ID do aparelho"></div>
+    <div class="activation-text">
+      <h3>Ative em poucos minutos</h3>
+      <p>Ao abrir o app, a TV mostra o <b>ID do aparelho</b>. No site de ativação, digite o ID e cadastre o link da sua lista.</p>
+      <p class="mut">Aperte OK na TV para conhecer o app com uma lista de demonstração.</p>
+      <a class="btn" href="https://cinemais.top/ativacao/playlist" target="_blank" rel="noopener">Cadastrar minha lista</a>
+    </div>
+  </div>
 </section>
 
 <section id="revendedor">
@@ -107,7 +120,7 @@
 </section>
 </main>
 
-<footer>© <span id="y"></span> Cine+ · cinemais.top<br><small>Big Buck Bunny e Sintel © Blender Foundation, licença CC BY 3.0.</small></footer>
+<footer>© <span id="y"></span> Cine+ · cinemais.top<br><small>Este aplicativo não fornece conteúdo. Use apenas listas que você tem direito de acessar.<br>Big Buck Bunny e Sintel © Blender Foundation, licença CC BY 3.0.</small></footer>
 <script src="script.js"></script>
 </body>
 </html>
